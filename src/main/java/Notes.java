@@ -9,12 +9,12 @@ class Notes {
 
 		int occurances = 0; //number of occurances in an array of our number
 		//This will get us the LAST occurance of a number	
-		//This loop will ALWAYS go through an array one by one
-		for (int i = 0; i < numArray.length; i++) {
+		for (int i = 0; i < numArray.length; i++) { //This loop will ALWAYS go through an array one by one
 			if (numArray[i] == num) { //true when we have found the number
 				occurances++; //increase for each number we fine
 				index = i; //save the index of the number we found
 				i = numArray.length; //Does first occurance ONLY
+				//return i;
 			}
 		}
 
